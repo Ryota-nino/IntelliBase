@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H524" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="login" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="login_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Author" representedClassName="Author" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="author_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="download_date" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="download_thumbnail_date" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="genre_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DrawingDoc" representedClassName="DrawingDoc" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Genre" representedClassName="Genre" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="parent_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="book_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="download_date" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="public_share" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="share" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="share_account_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="share_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="share_key" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="update_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="upload_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Purchase" representedClassName="Purchase" syncable="YES" codeGenerationType="class">
+        <attribute name="account_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="book_id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Author" positionX="-54" positionY="27" width="128" height="73"/>
+        <element name="Book" positionX="-36" positionY="36" width="128" height="133"/>
+        <element name="DrawingDoc" positionX="-18" positionY="90" width="128" height="88"/>
+        <element name="Genre" positionX="-18" positionY="81" width="128" height="88"/>
+        <element name="Note" positionX="0" positionY="90" width="128" height="223"/>
+        <element name="Purchase" positionX="18" positionY="135" width="128" height="88"/>
+    </elements>
+</model>
